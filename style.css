@@ -1,52 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("https://i.imgur.com/uMYPzqp.jpg") no-repeat center center fixed;
+
+  background-image: url("https://img.freepik.com/premium-vector/stunning-twilight-scene-digital-artwork-with-colorful-horizon_1292249-7953.jpg");
   background-size: cover;
-  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: white;
 }
 
+/* MAIN CARD */
 .container {
   width: 100%;
   max-width: 360px;
-  padding: 32px;
-  background: rgba(0,0,0,0.65);
+  margin: 16px;
+  padding: 28px;
+
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+
   text-align: center;
 }
 
+/* TITLE */
 h1 {
-  margin-bottom: 28px;
-  font-size: 2.2em;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
 }
 
 /* LIST */
 .app-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 /* BUTTON */
 .app-button {
   width: 100%;
   padding: 16px 0;
+
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
   border-radius: 16px;
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
+
   white-space: nowrap;
+  text-align: center;
 }
 
 /* DISABLED */
-.disabled {
-  background: #666;
+.app-button.disabled {
+  background: #555;
   opacity: 0.6;
   pointer-events: none;
 }
