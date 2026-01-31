@@ -14,6 +14,9 @@ body {
   align-items: center;
   color: var(--text-color);
   transition: background 0.3s, color 0.3s;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -74,4 +77,31 @@ p {
   --subtitle-color: #333;
   --primary-gradient: linear-gradient(135deg, #ff416c, #ff4b2b);
   --back-gradient: linear-gradient(135deg, #3a7bd5, #00d2ff);
+}
+
+.dark-mode {
+  --bg-color: rgba(0,0,0,0.75);
+  --text-color: white;
+  --subtitle-color: #ccc;
+  --primary-gradient: linear-gradient(135deg, #ff416c, #ff4b2b);
+  --back-gradient: linear-gradient(135deg, #3a7bd5, #00d2ff);
+}
+
+/* Mode Switch Button */
+#mode-switch {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: var(--primary-gradient);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 100;
+}
+
+#mode-switch:hover {
+  transform: scale(1.1);
 }
