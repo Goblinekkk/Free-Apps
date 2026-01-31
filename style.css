@@ -5,37 +5,37 @@ body {
   background-size: cover;
   color: white;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  max-width: 420px;
-  margin: 80px auto;
-  padding: 40px;
+  width: 100%;
+  max-width: 360px;
+  padding: 32px;
   background: rgba(0,0,0,0.65);
-  border-radius: 18px;
+  border-radius: 20px;
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 2.2em;
 }
 
-.subtitle {
-  margin-bottom: 35px;
-  opacity: 0.9;
-}
-
-/* APP LIST */
+/* LIST */
 .app-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
 }
 
+/* BUTTON */
 .app-button {
-  padding: 16px;
-  border-radius: 14px;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 16px;
   background: linear-gradient(90deg, #ff416c, #ff4b2b);
   color: white;
   text-decoration: none;
@@ -44,34 +44,9 @@ h1 {
   white-space: nowrap;
 }
 
-.app-button:hover {
-  opacity: 0.9;
-}
-
 /* DISABLED */
 .disabled {
   background: #666;
   opacity: 0.6;
   pointer-events: none;
-}
-
-/* DOWNLOAD PAGE */
-.download-button {
-  display: block;
-  margin: 30px 0;
-  padding: 18px;
-  border-radius: 14px;
-  background: linear-gradient(90deg, #00c853, #00e676);
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-.back-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.9em;
 }
