@@ -11,20 +11,12 @@
   <div class="container">
     <h1>Nulls Brawl</h1>
 
-    <p>
-      Private Brawl Stars server with unlimited gems, coins and all brawlers unlocked.
-    </p>
+    <p>Private Brawl Stars server with unlimited resources.</p>
 
     <div class="app-list">
-      <a class="app-button" href="https://gofile.io/d/85ae98f2-63f3-4a49-b3ec-9293a37ccfe3">
-        Download
-      </a>
-
-      <a class="app-button back-button" href="index.html">
-        Back to Apps
-      </a>
+      <a class="app-button" href="https://gofile.io/d/85ae98f2-63f3-4a49-b3ec-9293a37ccfe3">Download</a>
+      <a class="app-button back-button" href="index.html">Back to Apps</a>
     </div>
-
   </div>
 
 </body>
