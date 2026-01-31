@@ -15,9 +15,9 @@
     <h1>Free Apps</h1>
 
     <div class="app-list">
-      <a class="app-button" href="app-nulls-brawl.html">Nulls Brawl</a>
-      <a class="app-button" href="app-geometry-dash.html">Geometry Dash</a>
-      <a class="app-button" href="app-roblox.html">Roblox</a>
+      <a class="app-button" href="nulls-brawl.html">Nulls Brawl</a>
+      <a class="app-button" href="geometry-dash.html">Geometry Dash</a>
+      <a class="app-button" href="roblox.html">Roblox</a>
     </div>
   </div>
 
@@ -25,13 +25,12 @@
     const switchBtn = document.getElementById('mode-switch');
     const body = document.body;
 
-    // Načtení uloženého režimu
     const savedMode = localStorage.getItem('theme');
     if (savedMode) {
       body.classList.add(savedMode);
       updateButton(savedMode);
     } else {
-      body.classList.add('dark-mode'); // výchozí
+      body.classList.add('dark-mode');
     }
 
     switchBtn.addEventListener('click', () => {
