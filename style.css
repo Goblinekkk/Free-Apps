@@ -69,3 +69,9 @@ h1 {
   opacity: 0.6;
   pointer-events: none;
 }
+/* BACK BUTTON */
+.back-button {
+  background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+}
+
+
