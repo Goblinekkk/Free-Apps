@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <!-- Light/Dark Switch Button -->
+  <button id="mode-switch">🌙</button>
+
   <div class="container">
     <h1>Free Apps</h1>
 
@@ -17,6 +20,38 @@
       <a class="app-button" href="app-roblox.html">Roblox</a>
     </div>
   </div>
+
+  <script>
+    const switchBtn = document.getElementById('mode-switch');
+    const body = document.body;
+
+    // Načtení uloženého režimu
+    const savedMode = localStorage.getItem('theme');
+    if (savedMode) {
+      body.classList.add(savedMode);
+      updateButton(savedMode);
+    } else {
+      body.classList.add('dark-mode'); // výchozí
+    }
+
+    switchBtn.addEventListener('click', () => {
+      if (body.classList.contains('light-mode')) {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode');
+        updateButton('dark-mode');
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light-mode');
+        updateButton('light-mode');
+      }
+    });
+
+    function updateButton(mode) {
+      switchBtn.textContent = mode === 'light-mode' ? '🌙' : '☀️';
+    }
+  </script>
 
 </body>
 </html>
